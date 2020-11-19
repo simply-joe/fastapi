@@ -14,4 +14,4 @@ def read_item(item_id: int, q: str = None):
 
 @app.get("/stores/{store_id}")
 def read_store(store_id: int, q: str = None):
-    return {"store_id": store_id, "query": q}
+    return {"store_id": store_id, "q": q}
